@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+.form {
+    margin: 80px auto;
+}
+
+input {
+    margin: 10px 5px;
+}
+
+button {
+    margin: 10px;
+}
+
+.listContainer {
+    width: 50vw;
+    margin: 80px 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 10px;
+    width: 70px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+}
+
+ul button {
+    position: relative;
+    top: -12px;
+}
