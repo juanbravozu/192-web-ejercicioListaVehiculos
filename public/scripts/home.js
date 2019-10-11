@@ -15,6 +15,8 @@ function handleLoad() {
                 var vehicle = document.createElement('ul');
                 vehicle.innerHTML = '<li>'+item.brand+'</li><li>'+item.wheels+'</li><li>'+item.color+'</li><li><button class="delete">X</button></li>';
                 container.appendChild(vehicle);
+                vehicle.classList.add('container__item');
+                vehicle.style.backgroundColor = item.color;
                 console.log('Item agregado');
             });
 
@@ -36,6 +38,7 @@ function handleLoad() {
                         return raw.json();
                     })
                     .then(itemToDelete => {
+                        refreshList();
                         console.log(itemToDelete);
                     });
                 });

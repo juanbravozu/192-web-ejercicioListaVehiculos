@@ -12,22 +12,24 @@
     <section class="form">
         <form action="">
             <label for="vehicle-form-brand">Marca de vehículo:</label>
-            <input type="text" name="brand" id="vehicle-form-brand">
+            <input type="text" name="brand" id="vehicle-form-brand" class="form__textInput">
             <br>
 
             <label for="vehicle-form-wheels">Número de ruedas</label>
-            <input type="range" name="wheels" id="vehicle-form-wheels" min="2" max="20" value="0" step="2">
+            <input type="range" name="wheels" id="vehicle-form-wheels" min="2" max="20" value="0" step="2" class="form__range">
             <br>
 
             <label for="vehicle-form-color">Color:</label>
             <input type="color" name="color" id="vehicle-form-color">
             <br>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="form__button">Enviar</button>
         </form>
     </section>
     
-    <section class="listContainer"></section>
+    <section class="listContainer">
+        
+    </section>
 
     <script src="scripts/home.js"></script>
 </body>

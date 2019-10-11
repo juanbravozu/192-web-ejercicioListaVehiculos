@@ -31,6 +31,10 @@ app.post('/api/vehicle', (request, response) => {
 
 app.delete('/api/vehicle', (request, response) => {
     console.log(request.body);
+    vehicles.splice(request.body.index, 1);
+    response.send({
+        message: 'Item deleted'
+    })
 });
 
 app.listen(port, () => {
