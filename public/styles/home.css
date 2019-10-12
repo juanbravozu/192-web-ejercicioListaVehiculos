@@ -71,3 +71,25 @@ ul button {
     border-radius: 5px;
     padding: 5px 10px;
 }
+
+.wrapper {
+    transition: filter .7s ease;
+}
+
+.wrapper--active {
+    filter: blur(2px);
+    pointer-events: none;
+}
+
+.modal {
+    display: none;
+    background-color: coral rgba(255, 127, 80, 0.2);
+    opacity: 0;
+    transition: opacity 0.7 ease;
+    padding: 50px;
+}
+
+.modal--active {
+    display: fixed;
+    opacity: 1;
+}
