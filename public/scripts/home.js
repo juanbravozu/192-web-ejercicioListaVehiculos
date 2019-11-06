@@ -13,7 +13,7 @@ function handleLoad() {
             console.log(info);
             info.forEach((item) => {
                 var vehicle = document.createElement('ul');
-                vehicle.innerHTML = '<li>'+item.brand+'</li><li>'+item.wheels+'</li><li>'+item.color+'</li><li><button class="delete">X</button><button>Editar</button></li>';
+                vehicle.innerHTML = '<li>'+item.brand+'</li><li>'+item.wheels+'</li><li>'+item.color+'</li><li><button class="delete">X</button><button class="edit">Editar</button></li>';
                 container.appendChild(vehicle);
                 vehicle.classList.add('container__item');
                 vehicle.style.backgroundColor = item.color;
@@ -42,6 +42,20 @@ function handleLoad() {
                         console.log(itemToDelete);
                     });
                 });
+            });
+
+            //Edit info from items
+
+            var editBtns = document.querySelectorAll('.edit');
+
+            var editForm = document.querySelector('.modal__form');
+
+            
+
+            editBtns.forEach((btn, index) => {
+                btn.addEventListener('edit', () => {
+
+                })
             });
         });
     }
